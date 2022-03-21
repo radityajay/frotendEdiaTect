@@ -16,6 +16,9 @@ module.exports = {
         },
         'accent':{
           100: '#333333'
+        },
+        'neutral' : {
+          100: '#F2F2F2'
         }
       },
       fontFamily: {

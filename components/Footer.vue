@@ -1,7 +1,7 @@
 <template>
   <div>
     <footer class="relative bg-accent-100 pt-14 pb-6 text-white">
-      <div class="container mx-auto px-4">
+      <div class="container mx-auto px-4 xl:px-32">
         <div class="flex flex-wrap text-left lg:text-left">
           <div class="w-full lg:w-6/12 px-4">
             <!-- <h4 class="text-3xl fonat-semibold text-white">Let's keep in touch!</h4> -->

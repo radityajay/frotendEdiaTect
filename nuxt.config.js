@@ -21,6 +21,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    "node_modules/swiper/css/swiper.css",
     "node_modules/remixicon/fonts/remixicon.css",
     '~/assets/css/style.css'
   ],

@@ -3,7 +3,7 @@
     <Navbar />
 
     <!-- jumbotron -->
-    <div class="py-72 bg-hero">
+    <div class="py-64 bg-hero">
       <div class="flex justify-start ml-32">
         <div>
           <h2 class="text-4xl font-bold mb-2 text-primary-100">
@@ -12,7 +12,7 @@
           </h2>
           <h2 class="text-4xl font-bold mb-2 mb-8 text-primary-100">BANGUNAN IMPIANMU!</h2>
           <button
-            class="bg-primary-100 text-white hover:text-secondary-100 hover:bg-transparent hover:border-primary-100 font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider"
+            class="bg-primary-100 text-white hover:text-secondary-100 hover:bg-transparent hover:border-2 hover:border-secondary-100 font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider"
             @click="toggleModal = !toggleModal"
           >mulai sekarang</button>
         </div>
@@ -102,11 +102,11 @@
       <div v-if="toggleModal" class="absolute z-20 inset-0 opacity-30 bg-black"></div>
     </div>
 
-    <div class="mb-96 mt-16">
+    <div class="mb-28 mt-16">
       <div class="flex items-center justify-center mb-10">
-        <div class="grid justify-items-center grid-cols-6 gap-x-4 gap-y-1 max-w-7xl">
+        <div class="grid grid-cols-6 gap-x-16 gap-y-1 max-w-full">
           <!-- Title -->
-          <div class="col-span-full text-2xl font-bold mb-2 mb-8 text-gray-800">
+          <div class="col-span-full text-2xl font-semibold mb-8 text-gray-800">
             <h3>KATEGORI</h3>
           </div>
 
@@ -148,17 +148,104 @@
         </div>
       </div>
     </div>
+    <div class="px-4 xl:px-28 pb-10">
+      <div class="flex justify-between items-center mb-3">
+        <div>
+          <h3 class="text-2xl font-semibold uppercase">produk</h3>
+        </div>
+        <div class="">
+          <nuxt-link to="/produk">
+            <span class="font-semibold hover:text-secondary-100">Lainnya</span>
+          </nuxt-link>
+        </div>
+      </div>
+      <div style="position: relative" class="">
+        <swiper class="swiper px-5" :options="swiperOption">
+          <swiper-slide class>
+            <CardProduct />
+          </swiper-slide>
+          <swiper-slide>
+            <CardProduct />
+          </swiper-slide>
+          <swiper-slide>
+            <CardProduct />
+          </swiper-slide>
+          <swiper-slide>
+            <CardProduct />
+          </swiper-slide>
+          <swiper-slide>
+            <CardProduct />
+          </swiper-slide>
+          <swiper-slide>
+            <CardProduct />
+          </swiper-slide>
+          <swiper-slide>
+            <CardProduct />
+          </swiper-slide>
+          <swiper-slide>
+            <CardProduct />
+          </swiper-slide>
+          <swiper-slide>
+            <CardProduct />
+          </swiper-slide>
+        </swiper>
+
+        <div class="swiper-button-prev" slot="button-prev"></div>
+        <div class="swiper-button-next" slot="button-next"></div>
+      </div>
+    </div>
     <Footer />
   </div>
 </template>
 
 <script>
+import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
+import 'swiper/css/swiper.css'
+import CardProduct from '../components/CardProduct.vue'
 export default {
   name: "HomePage",
   data() {
     return {
-      toggleModal: false
+      toggleModal: false,
+      swiperOption: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        slidesPerGroup: 4,
+        breakpoints: {
+          // when window width is <= 499px
+          1000: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            slidesPerGroup: 4,
+          },
+          520: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 1,
+            slidesPerGroup: 2,
+          },
+          300: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 1,
+            slidesPerGroup: 2,
+          },
+        },
+        loop: false,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
+      },
     }
-  }
+  },
+  components: {
+    Swiper,
+    SwiperSlide,
+    CardProduct
+  },
 }
 </script>

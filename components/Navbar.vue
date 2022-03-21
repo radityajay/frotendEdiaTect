@@ -2,7 +2,7 @@
   <div :class="{ 'shadow-lg': !view.atTopOfPage }" :style="{'border-bottom: 0px': !view.atTopOfPage}" class="fixed w-full top-0 animated z-20">
     <div class="font-poppins">
       <nav class="bg-gray-200">
-        <div class="container mx-auto px-4 sm:px-6">
+        <div class="container mx-auto px-4 sm:px-6 xl:px-32">
           <div class="flex items-center h-16">
             <div class="flex items-center w-full">
               <div class="flex-shrink-0">
