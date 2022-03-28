@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "core-js": "^3.19.3",
+    "firebase": "^9.6.10",
     "nuxt": "^2.15.8",
     "remixicon": "^2.5.0",
     "swiper": "^5.4.5",

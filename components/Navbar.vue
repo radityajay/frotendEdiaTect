@@ -1,9 +1,9 @@
 <template>
   <div :class="{ 'shadow-lg': !view.atTopOfPage }" :style="{'border-bottom: 0px': !view.atTopOfPage}" class="fixed w-full top-0 animated z-20">
     <div class="font-poppins">
-      <nav class="bg-gray-200">
-        <div class="container mx-auto px-4 sm:px-6 xl:px-32">
-          <div class="flex items-center h-16">
+      <nav class="bg-light-100 shadow-md">
+        <div class="mx-auto sm:px-6 xl:px-28">
+          <div class="flex items-center h-20">
             <div class="flex items-center w-full">
               <div class="flex-shrink-0">
                 <img class="h-10" src="../assets/images/logo-transparan.png" alt="Workflow logo" />
@@ -47,9 +47,9 @@
                   class="px-3 py-2 rounded-md text-sm font-medium text-gray-900 hover:text-white hover:bg-primary-100 focus:outline-none focus:text-gray-200 focus:bg-gray-700"
                 >HOME</a>
                 <a
-                  href="#"
+                  href="/arsitek"
                   class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-900 hover:text-white hover:bg-primary-100 focus:outline-none focus:text-gray-200 focus:bg-gray-700"
-                >ABOUT</a>
+                >ARSITEK</a>
                 <a
                   href="#"
                   class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-900 hover:text-white hover:bg-primary-100 focus:outline-none focus:text-gray-200 focus:bg-gray-700"
@@ -217,7 +217,7 @@
           </div>-->
         </div>
       </nav>
-      <nav class="bg-gray-100">
+      <!-- <nav class="bg-gray-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex items-center h-10">
             <div class="flex justify-center items-center w-full">
@@ -236,7 +236,7 @@
             </div>
           </div>
         </div>
-      </nav>
+      </nav> -->
     </div>
   </div>
 </template>

@@ -1,16 +1,14 @@
 <template>
-  <div class="font-poppins">
-    <Navbar />
-
+  <div>
     <!-- jumbotron -->
     <div class="py-64 bg-hero">
       <div class="flex justify-start ml-32">
         <div>
-          <h2 class="text-4xl font-bold mb-2 text-primary-100">
+          <h2 class="text-4xl font-extrabold mb-2 text-primary-100">
             TEMUKAN
             <span class="text-secondary-100">IDE DESAIN</span>
           </h2>
-          <h2 class="text-4xl font-bold mb-2 mb-8 text-primary-100">BANGUNAN IMPIANMU!</h2>
+          <h2 class="text-4xl font-extrabold mb-2 mb-8 text-primary-100">BANGUNAN IMPIANMU!</h2>
           <button
             class="bg-primary-100 text-white hover:text-secondary-100 hover:bg-transparent hover:border-2 hover:border-secondary-100 font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider"
             @click="toggleModal = !toggleModal"
@@ -104,7 +102,7 @@
 
     <div class="mb-28 mt-16">
       <div class="flex items-center justify-center mb-10">
-        <div class="grid grid-cols-6 gap-x-16 gap-y-1 max-w-full">
+        <div class="grid grid-cols-6 gap-x-8 gap-y-1 max-w-full">
           <!-- Title -->
           <div class="col-span-full text-2xl font-semibold mb-8 text-gray-800">
             <h3>KATEGORI</h3>
@@ -148,53 +146,56 @@
         </div>
       </div>
     </div>
-    <div class="px-4 xl:px-28 pb-10">
-      <div class="flex justify-between items-center mb-3">
-        <div>
-          <h3 class="text-2xl font-semibold uppercase">produk</h3>
+    <div class="pt-10 bg-light-100">
+      <div class="xl:mx-40">
+        <div class="flex justify-between items-center mb-3">
+          <div>
+            <h3 class="text-2xl font-semibold uppercase">produk</h3>
+          </div>
+          <div class>
+            <nuxt-link to="/produk">
+              <span class="font-bold hover:text-secondary-100">Lainnya</span>
+            </nuxt-link>
+          </div>
         </div>
-        <div class="">
-          <nuxt-link to="/produk">
-            <span class="font-semibold hover:text-secondary-100">Lainnya</span>
-          </nuxt-link>
-        </div>
-      </div>
-      <div style="position: relative" class="">
-        <swiper class="swiper px-5" :options="swiperOption">
-          <swiper-slide class>
-            <CardProduct />
-          </swiper-slide>
-          <swiper-slide>
-            <CardProduct />
-          </swiper-slide>
-          <swiper-slide>
-            <CardProduct />
-          </swiper-slide>
-          <swiper-slide>
-            <CardProduct />
-          </swiper-slide>
-          <swiper-slide>
-            <CardProduct />
-          </swiper-slide>
-          <swiper-slide>
-            <CardProduct />
-          </swiper-slide>
-          <swiper-slide>
-            <CardProduct />
-          </swiper-slide>
-          <swiper-slide>
-            <CardProduct />
-          </swiper-slide>
-          <swiper-slide>
-            <CardProduct />
-          </swiper-slide>
-        </swiper>
+        <div style="position: relative" class>
+          <swiper class="swiper px-5" :options="swiperOption">
+            <swiper-slide class>
+              <CardProduct />
+            </swiper-slide>
+            <swiper-slide>
+              <CardProduct />
+            </swiper-slide>
+            <swiper-slide>
+              <CardProduct />
+            </swiper-slide>
+            <swiper-slide>
+              <CardProduct />
+            </swiper-slide>
+            <swiper-slide>
+              <CardProduct />
+            </swiper-slide>
+            <swiper-slide>
+              <CardProduct />
+            </swiper-slide>
+            <swiper-slide>
+              <CardProduct />
+            </swiper-slide>
+            <swiper-slide>
+              <CardProduct />
+            </swiper-slide>
+            <swiper-slide>
+              <CardProduct />
+            </swiper-slide>
+          </swiper>
 
-        <div class="swiper-button-prev" slot="button-prev"></div>
-        <div class="swiper-button-next" slot="button-next"></div>
+          <div class="swiper-button-prev" slot="button-prev"></div>
+          <div class="swiper-button-next" slot="button-next"></div>
+        </div>
       </div>
     </div>
-    <Footer />
+
+    <div class="mt-16"></div>
   </div>
 </template>
 

@@ -9,6 +9,7 @@ module.exports = {
       },
       colors: {
         'primary': {
+          50: '#688191',
           100: '#143D59'
         },
         'secondary':{
@@ -19,6 +20,9 @@ module.exports = {
         },
         'neutral' : {
           100: '#F2F2F2'
+        },
+        'light': {
+          100: '#f8f9fa'
         }
       },
       fontFamily: {
