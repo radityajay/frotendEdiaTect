@@ -8,7 +8,7 @@
             TEMUKAN
             <span class="text-secondary-100">IDE DESAIN</span>
           </h2>
-          <h2 class="text-4xl font-extrabold mb-2 mb-8 text-primary-100">BANGUNAN IMPIANMU!</h2>
+          <h2 class="text-4xl font-extrabold mb-8 text-primary-100">BANGUNAN IMPIANMU!</h2>
           <button
             class="bg-primary-100 text-white hover:text-secondary-100 hover:bg-transparent hover:border-2 hover:border-secondary-100 font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider"
             @click="toggleModal = !toggleModal"
