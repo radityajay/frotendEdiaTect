@@ -5,7 +5,7 @@
         <div class="flex flex-wrap text-left lg:text-left">
           <div class="w-full lg:w-6/12 px-4">
             <!-- <h4 class="text-3xl fonat-semibold text-white">Let's keep in touch!</h4> -->
-            <img src="../assets/images/logo-black-white.png" class="h-20" alt />
+            <img src="/images/logo-black-white.png" class="h-20" alt />
             <h5 class="text-lg mt-0 mr-36 text-blueGray-600 pt-5">
               EdiaTect merupakan sebuah platform yang
               menyediakan ide desain sesuai dengan

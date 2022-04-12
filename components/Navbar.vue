@@ -6,7 +6,7 @@
           <div class="flex items-center h-20">
             <div class="flex items-center w-full">
               <div class="flex-shrink-0">
-                <img class="h-10" src="../assets/images/logo-transparan.png" alt="Workflow logo" />
+                <img class="h-10" src="/images/logo-transparan.png" alt="Workflow logo" />
               </div>
 
               <div class="w-full mr-10 hidden md:block">

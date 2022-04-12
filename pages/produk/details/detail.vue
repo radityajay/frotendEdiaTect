@@ -6,32 +6,32 @@
           <div>
             <div class="h-auto aspect-video mx-auto">
               <img
-                src="../../../assets//images/img3-mark-01.png"
+                src="/images/img3-mark-01.png"
                 alt="gambar1"
               />
             </div>
             <div class="columns-4 mt-4 mb-4">
               <div class="w-full aspect-square">
                 <img
-                  src="../../../assets//images/img3-mark-01.png"
+                  src="/images/img3-mark-01.png"
                   alt="gambar1"
                 />
               </div>
               <div class="w-full aspect-square">
                 <img
-                  src="../../../assets//images/img2-mark-01.png"
+                  src="/images/img2-mark-01.png"
                   alt="gambar2"
                 />
               </div>
               <div class="w-full aspect-square">
                 <img
-                  src="../../../assets//images/img1-mark-01.png"
+                  src="/images/img1-mark-01.png"
                   alt="gambar3"
                 />
               </div>
               <div class="w-full aspect-square">
                 <img
-                  src="../../../assets//images/img4-mark-01.jpg"
+                  src="/images/img4-mark-01.jpg"
                   alt="gambar4"
                 />
               </div>

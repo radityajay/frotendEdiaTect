@@ -19,7 +19,7 @@
             <div class>
               <div class="relative h-40 w-40 mb-3">
                 <img
-                  src="../assets/images/profile.png"
+                  src="/images/profile.png"
                   alt="profile"
                   class="w-full object-fill rounded-full"
                 />

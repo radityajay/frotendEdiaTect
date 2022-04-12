@@ -112,7 +112,7 @@
           <div class="col-span-2">
             <div class="w-96 h-64 relative rounded-xl">
               <div class="absolute rounded-xl inset-0 bg-cover bg-center z-0">
-                <img src="../assets/images/hospitality.png" alt />
+                <img src="/images/hospitality.png" alt />
               </div>
               <div
                 class="opacity-100 hover:opacity-100 duration-300 absolute inset-0 z-10 text-4xl text-white font-semibold mt-48 ml-10"
@@ -124,7 +124,7 @@
           <div class="col-span-2">
             <div class="w-96 h-64 relative rounded-xl">
               <div class="absolute rounded-xl inset-0 bg-cover bg-center z-0">
-                <img src="../assets/images/comercial.png" alt />
+                <img src="/images/comercial.png" alt />
               </div>
               <div
                 class="opacity-100 hover:opacity-100 duration-300 absolute inset-0 z-10 text-4xl text-white font-semibold mt-48 ml-10"
@@ -136,7 +136,7 @@
           <div class="col-span-2">
             <div class="w-96 h-64 relative rounded-xl">
               <div class="absolute rounded-xl inset-0 bg-cover bg-center z-0">
-                <img src="../assets/images/recidential.png" alt />
+                <img src="/images/recidential.png" alt />
               </div>
               <div
                 class="opacity-100 hover:opacity-100 duration-300 absolute inset-0 z-10 text-4xl text-white font-semibold mt-48 ml-10"

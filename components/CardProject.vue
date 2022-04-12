@@ -9,7 +9,7 @@
               <div class>
                 <div class="relative h-62 w-full mb-3">
                   <img
-                    src="../assets/images/desain3d.jpg"
+                    src="/images/desain3d.jpg"
                     alt="Just a flower"
                     class="w-full object-fill rounded-2xl"
                   />

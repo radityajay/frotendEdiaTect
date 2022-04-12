@@ -1,6 +1,7 @@
 {
   "hosting": {
     "public": "dist",
+    "site": "ediatect",
     "ignore": [
       "firebase.json",
       "**/.*",
