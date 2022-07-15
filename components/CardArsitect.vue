@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link to="/arsitek">
+  <nuxt-link to="/arsitek/profile/profile">
     <div
       class="
         relative
@@ -44,7 +44,7 @@
                     <h2
                       class="text-lg mr-auto cursor-pointer text-black truncate"
                     >
-                      Lorem Ipsum
+                      Ar. Made Eka Wijaya ST IAI
                     </h2>
                   </div>
                 </div>

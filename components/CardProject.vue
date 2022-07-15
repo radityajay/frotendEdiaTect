@@ -34,57 +34,9 @@
                       <h2
                         class="text-lg mr-auto cursor-pointer text-black truncate"
                       >Rumah Minimalis dengan type 80</h2>
-                      <!-- <div
-                      class="flex items-center bg-green-400 text-white text-xs px-2 py-1 ml-3 rounded-lg"
-                      >INSTOCK</div>-->
                     </div>
                   </div>
                   <div class="text-xl text-secondary-100 font-semibold mt-1">Rp 2.000.000</div>
-                  <!-- <div class="lg:flex py-4 text-sm text-gray-600">
-                  <div class="flex-1 inline-flex items-center mb-3">
-                    <div class="w-full flex-none text-sm flex items-center text-gray-600">
-                      <ul class="flex flex-row justify-center items-center space-x-2">
-                        <li class>
-                          <span
-                            class="block p-1 border-2 border-gray-900 hover:border-blue-600 rounded-full transition ease-in duration-300"
-                          >
-                            <a href="#blue" class="block w-3 h-3 bg-blue-600 rounded-full"></a>
-                          </span>
-                        </li>
-                        <li class>
-                          <span
-                            class="block p-1 border-2 border-gray-900 hover:border-yellow-400 rounded-full transition ease-in duration-300"
-                          >
-                            <a href="#yellow" class="block w-3 h-3 bg-yellow-400 rounded-full"></a>
-                          </span>
-                        </li>
-                        <li class>
-                          <span
-                            class="block p-1 border-2 border-gray-900 hover:border-red-500 rounded-full transition ease-in duration-300"
-                          >
-                            <a href="#red" class="block w-3 h-3 bg-red-500 rounded-full"></a>
-                          </span>
-                        </li>
-                        <li class>
-                          <span
-                            class="block p-1 border-2 border-gray-900 hover:border-green-500 rounded-full transition ease-in duration-300"
-                          >
-                            <a href="#green" class="block w-3 h-3 bg-green-500 rounded-full"></a>
-                          </span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="flex-1 inline-flex items-center mb-3">
-                    <span class="text-secondary whitespace-nowrap mr-3">Size</span>
-                    <div class="cursor-pointer text-gray-400">
-                      <span class="hover:text-purple-500 p-1 py-0">S</span>
-                      <span class="hover:text-purple-500 p-1 py-0">M</span>
-                      <span class="hover:text-purple-500 p-1 py-0">L</span>
-                      <span class="hover:text-purple-500 p-1 py-0">XL</span>
-                    </div>
-                  </div>
-                  </div>-->
                 </div>
               </div>
             </div>

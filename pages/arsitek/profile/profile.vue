@@ -5,7 +5,7 @@
         <CardProfile />
       </div>
       <div class="mt-36">
-        <h2 class="font-bold text-lg">Lorem Ipsum</h2>
+        <h2 class="font-bold text-lg">Ar. Made Eka Wijaya ST IAI</h2>
         <p class="text-gray-400 pt-6">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
           eget lobortis lectus. Sed nisl orci, tempus ut dolor et, posuere

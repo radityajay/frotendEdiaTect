@@ -6,7 +6,9 @@
           <div class="flex items-center h-20">
             <div class="flex items-center w-full">
               <div class="flex-shrink-0">
-                <img class="h-10" src="/images/logo-transparan.png" alt="Workflow logo" />
+                <nuxt-link to="/">
+                  <img class="h-10" src="/images/logo-transparan.png" alt="Workflow logo" />
+                </nuxt-link>
               </div>
 
               <div class="w-full mr-10 hidden md:block">
@@ -50,10 +52,10 @@
                   href="/arsitek"
                   class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-900 hover:text-white hover:bg-primary-100 focus:outline-none focus:text-gray-200 focus:bg-gray-700"
                 >ARSITEK</a>
-                <a
+                <!-- <a
                   href="#"
                   class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-900 hover:text-white hover:bg-primary-100 focus:outline-none focus:text-gray-200 focus:bg-gray-700"
-                >LOGIN</a>
+                >LOGIN</a> -->
               </div>
             </div>
             <!-- <div class="hidden md:block">

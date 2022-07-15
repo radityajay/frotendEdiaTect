@@ -4,18 +4,6 @@
             <div>
               <CardArsitect />
             </div>
-            <div>
-              <CardArsitect />
-            </div>
-            <div>
-              <CardArsitect />
-            </div>
-            <div>
-              <CardArsitect />
-            </div>
-            <div>
-              <CardArsitect />
-            </div>
           </div>
         </div>
 </template>

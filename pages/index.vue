@@ -35,18 +35,16 @@
             <div class="w-full p-4">
               <div class="flex justify-center items-center">
                 <form action>
-                  <div class="relative">
-                    <input
-                      id="luas"
-                      name="luas"
+                  <div class="my-3">
+                    <select
                       type="text"
-                      class="peer h-10 w-full border-b-2 border-gray-300 text-gray-900 placeholder-transparent focus:outline-none focus:border-secondary-100"
-                      placeholder="john@doe.com"
-                    />
-                    <label
-                      for="luas"
-                      class="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm"
-                    >Luas Bangunan</label>
+                      name="text"
+                      placeholder="Luas Tanah"
+                      class="h-10 w-full py-2 border-b-2 border-gray-300 focus:outline-none focus:border-secondary-100"
+                    >
+                      <option selected class="text-gray-300">Luas Tanah</option>
+                      <option value>150 m<sup>2</sup></option>
+                    </select>
                   </div>
                   <div class="my-3">
                     <select
@@ -67,10 +65,10 @@
                       class="h-10 w-full py-2 border-b-2 border-gray-300 focus:outline-none focus:border-secondary-100"
                     >
                       <option selected class="text-gray-300">Tipe Bangunan</option>
-                      <option value>Minimalis</option>
+                      <option value>120</option>
                     </select>
                   </div>
-                  <div class="my-3 relative">
+                  <div class="my-4 relative">
                     <input
                       id="biaya"
                       name="biaya"
@@ -91,7 +89,7 @@
             >
               <button
                 class="rounded-full bg-primary-100 text-white px-6 py-2 m-auto mt-4 uppercase group-hover:transition-all hover:ease-out hover:duration-300 hover:bg-secondary-100"
-                @click="toggleModal = false"
+                @click="handleFind()"
               >Cari</button>
             </div>
           </div>
@@ -161,31 +159,145 @@
         <div style="position: relative" class>
           <swiper class="swiper px-5" :options="swiperOption">
             <swiper-slide class>
-              <CardProduct />
+              <nuxt-link to="/produk/details/1">
+              <div
+              class="relative flex flex-col items-center justify-center hover:scale-105 transition duration-500 cursor-pointer h-96"
+            >
+              <div class="container">
+                <div class="max-w-md w-full bg-stone-50 border border-stone-200 shadow-lg rounded-xl p-6">
+                  <div class="flex flex-col">
+                    <div class>
+                      <div class="relative h-62 w-full mb-3">
+                        <img
+                          src="/images/img2-mark-01.png"
+                          alt="Just a flower"
+                          class="w-full object-fill rounded-2xl"
+                        />
+                      </div>
+                      <div class="flex-auto justify-evenly">
+                        <div class="flex flex-wrap w-full">
+                          <div class="w-full flex-none text-sm flex items-center text-gray-600">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="h-4 w-4 text-secondary-100 mr-1"
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                            >
+                              <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                              />
+                            </svg>
+                            <span class="text-gray-400 whitespace-nowrap mr-3">4.60</span>
+                            <span class="mr-2 text-gray-400">Bali</span>
+                          </div>
+                          <div class="flex items-center w-full justify-between min-w-0">
+                            <h2
+                              class="text-lg mr-auto cursor-pointer text-black truncate"
+                            >Rumah Minimalis dengan type 45</h2>
+                          </div>
+                        </div>
+                        <div class="text-xl text-secondary-100 font-semibold mt-1">Rp 1.000.000</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </nuxt-link>
             </swiper-slide>
             <swiper-slide>
-              <CardProduct />
+              <nuxt-link to="/produk/details/2">
+              <div
+              class="relative flex flex-col items-center justify-center hover:scale-105 transition duration-500 cursor-pointer h-96"
+            >
+              <div class="container">
+                <div class="max-w-md w-full bg-stone-50 border border-stone-200 shadow-lg rounded-xl p-6">
+                  <div class="flex flex-col">
+                    <div class>
+                      <div class="relative h-62 w-full mb-3">
+                        <img
+                          src="/images/img1-mark-01.png"
+                          alt="Just a flower"
+                          class="w-full object-fill rounded-2xl"
+                        />
+                      </div>
+                      <div class="flex-auto justify-evenly">
+                        <div class="flex flex-wrap w-full">
+                          <div class="w-full flex-none text-sm flex items-center text-gray-600">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="h-4 w-4 text-secondary-100 mr-1"
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                            >
+                              <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                              />
+                            </svg>
+                            <span class="text-gray-400 whitespace-nowrap mr-3">4.60</span>
+                            <span class="mr-2 text-gray-400">Bali</span>
+                          </div>
+                          <div class="flex items-center w-full justify-between min-w-0">
+                            <h2
+                              class="text-lg mr-auto cursor-pointer text-black truncate"
+                            >Rumah Minimalis dengan type 120</h2>
+                          </div>
+                        </div>
+                        <div class="text-xl text-secondary-100 font-semibold mt-1">Rp 2.000.000</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </nuxt-link>
             </swiper-slide>
             <swiper-slide>
-              <CardProduct />
-            </swiper-slide>
-            <swiper-slide>
-              <CardProduct />
-            </swiper-slide>
-            <swiper-slide>
-              <CardProduct />
-            </swiper-slide>
-            <swiper-slide>
-              <CardProduct />
-            </swiper-slide>
-            <swiper-slide>
-              <CardProduct />
-            </swiper-slide>
-            <swiper-slide>
-              <CardProduct />
-            </swiper-slide>
-            <swiper-slide>
-              <CardProduct />
+              <nuxt-link to="/produk/details/3">
+              <div
+              class="relative flex flex-col items-center justify-center hover:scale-105 transition duration-500 cursor-pointer h-96"
+            >
+              <div class="container">
+                <div class="max-w-md w-full bg-stone-50 border border-stone-200 shadow-lg rounded-xl p-6">
+                  <div class="flex flex-col">
+                    <div class>
+                      <div class="relative h-62 w-full mb-3">
+                        <img
+                          src="/images/img3-mark-01.png"
+                          alt="Just a flower"
+                          class="w-full object-fill rounded-2xl"
+                        />
+                      </div>
+                      <div class="flex-auto justify-evenly">
+                        <div class="flex flex-wrap w-full">
+                          <div class="w-full flex-none text-sm flex items-center text-gray-600">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="h-4 w-4 text-secondary-100 mr-1"
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                            >
+                              <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                              />
+                            </svg>
+                            <span class="text-gray-400 whitespace-nowrap mr-3">4.60</span>
+                            <span class="mr-2 text-gray-400">Bali</span>
+                          </div>
+                          <div class="flex items-center w-full justify-between min-w-0">
+                            <h2
+                              class="text-lg mr-auto cursor-pointer text-black truncate"
+                            >Rumah Minimalis dengan type 70</h2>
+                          </div>
+                        </div>
+                        <div class="text-xl text-secondary-100 font-semibold mt-1">Rp 1.500.000</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </nuxt-link>
             </swiper-slide>
           </swiper>
 
@@ -241,6 +353,14 @@ export default {
           prevEl: '.swiper-button-prev'
         }
       },
+    }
+  },
+  methods:{
+    handleFind(){
+      this.toggleModal = false
+      $nuxt.$router.push({
+        path: "/produk/find/1",
+      });
     }
   },
   components: {
